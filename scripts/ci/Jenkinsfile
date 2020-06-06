@@ -8,7 +8,7 @@ pipeline {
             agent any
             steps {
                 checkout scm
-                sh "rm *.zip"
+                sh "rm -f *.zip"
             }
         }
         stage('Build') {
